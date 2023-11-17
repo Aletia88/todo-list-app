@@ -15,7 +15,7 @@ Night and Light mode toggles.
 Getting Started
 
 Clone the repository:
-git clone https://github.com/aletia88/todo-list-app.git
+git clone https://github.com/Aletia88/todo-list-app.git
 
 Install dependencies:
 cd todo-list-app
