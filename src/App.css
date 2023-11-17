@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body.light-mode .background-quote{
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+  /* background-color: #ffffff; */
+  color: #333333; 
+  
+}
+
+body.light-mode .task {
+  padding: 0 20px;
+  background-color: white;
+  
+}
+
+body.dark-mode {
+  background-color: #161722; 
+  color: #ffffff; 
+}
+body.dark-mode input{
+  color: black;
+  
+}
+
+option ,select{
+  color:#000;
+}
+
+.cat{
+  background-color: #ecf7fe;
+}
+select:hover {
+  border: #3ca3dd 1px solid;
+}
+
+
+.new {
+  background-color: #3ca3dd;
+}
