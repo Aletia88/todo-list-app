@@ -46,6 +46,7 @@ const App: React.FC = () => {
       setTasks(updatedTasks);
       saveTasksToLocalStorage(updatedTasks);
       setNewTask("");
+      setShowForm(false);
     }
   };
 
