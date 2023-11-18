@@ -48,3 +48,5 @@ Technologies Used:
 React
 TypeScript
 Tailwind CSS
+
+view project: https://todo-list-app-new88.vercel.app/
