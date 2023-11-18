@@ -221,14 +221,14 @@ const App: React.FC = () => {
           ))}
         </ul>
 
-        {tasks.length > 0 && (
+        {tasks.length > 0 ? (
           <button
             onClick={handleClearAllTasks}
             className="rounded mt-10 ml-2 p-2 bg-red-500 text-white "
           >
             Clear All Tasks
           </button>
-        )}
+        ) : (<p className=" text-gray-400 pl-8 pt-2 italic font-serif">Add a new task ....</p>)}
       </div>
     </div>
   );
