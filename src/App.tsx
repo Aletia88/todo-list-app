@@ -109,7 +109,6 @@ const App: React.FC = () => {
 
   const shuffledQuotes = shuffleArray(quotes);
   useEffect(() => {
-    // Shuffle quotes when the component mounts or when currentQuoteIndex reaches the end
     setCurrentQuoteIndex(0);
     const intervalId = setInterval(() => {
       setCurrentQuoteIndex(
@@ -191,7 +190,7 @@ const App: React.FC = () => {
             </label>
             <button
               type="submit"
-              className="ml-2 p-2 bg-blue-500 text-white self-center w-1/4 rounded"
+              className="ml-2 p-2 bg-blue-500 text-white self-center md:w-1/4 rounded"
             >
               Add Task
             </button>
@@ -222,9 +221,14 @@ const App: React.FC = () => {
           ))}
         </ul>
 
-       {tasks.length > 0 && <button onClick={handleClearAllTasks} className="rounded mt-10 ml-2 p-2 bg-red-500 text-white ">
-        Clear All Tasks
-      </button>}
+        {tasks.length > 0 && (
+          <button
+            onClick={handleClearAllTasks}
+            className="rounded mt-10 ml-2 p-2 bg-red-500 text-white "
+          >
+            Clear All Tasks
+          </button>
+        )}
       </div>
     </div>
   );
